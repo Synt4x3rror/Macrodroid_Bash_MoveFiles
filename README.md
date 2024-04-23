@@ -51,7 +51,7 @@ This project is targeted for a very specific use case,  if you're going to try a
 
     I've also set the timeout to 20 minutes and chosen to block next action until script is completed. You can set these parameters to your liking.
 12. Press the Ok Button and then save your script. Your setup will look something like this:\
-<img src="./github/images/final.png" height="600">
+    <img src="./github/images/final.png" height="600">
 
 
 ## Acknowledgements
