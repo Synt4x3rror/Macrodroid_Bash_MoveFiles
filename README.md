@@ -35,7 +35,7 @@ This project is targeted for a very specific use case,  if you're going to try a
         <li>The path to the source directory where you want files being copied from</li>
         <li>The path to the target directory where you want files copied to</li>
     </ol>
-    You can name these variables whatever you want, but it's recommended to name them something you can associate them to what value they're supposed to hold.
+    You can name these variables whatever you want, but it's recommended to name them something you can associate them to what value they're supposed to hold.\
 
     <img src="./github/images/init_variables.png" height="600">
 9. Set the value to the variables you've just created\
