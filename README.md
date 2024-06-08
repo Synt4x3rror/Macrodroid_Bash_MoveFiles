@@ -6,19 +6,22 @@ This file wil detail the steps required to move files from a source directory (i
 ## Dependencies
 This project is targeted for a very specific use case,  if you're going to try and replicate this, you will need the following:
 
-- A phone or tablet running Android OS. At the time of writing, Android 13 was used.
+- A phone or tablet running Android OS. At the time of writing, this method works for both Android 13 and android 14.
 - [Macrodroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid&hl=en_US)
+- [Macrodroid Helper App](https://www.macrodroidforum.com/index.php?threads/macrodroid-helper-apk.1/)
 - [Termux](https://f-droid.org/packages/com.termux/) I only use it to grant the batch file executable permission, you can skip it if you have another way of accomplish this, or uninstall it once you're done.
 - The [copy_files.sh](./copy_files.sh) bash script.
 - Optional: A Micro SD card, but you could move your files to another directory of your choice.
 
 ## Instructions
 
-1. Download Macrodroid from the playstore. Give all the required permissions in order for the app to function properly. You may also need to install helper apps for your device. For more info, visit [This](https://macrodroidforum.com/wiki/index.php/MacroDroid_Wiki) link.
-2. Copy the [copy_files](./copy_files.sh) file to the android device. This file should be in the device's internal storage. In this example I created a 'Scripts' directory and copied the file to it.\
-    <img src="./github/images/copy_to_device.png" height="600"></img>
-3. (Optional) If you're using the macrodriod helper app, make sure to give it permission to manage files. Macrodroid should also have the appropiate permissions set.\
+1. Download and install Macrodroid from the playstore. Give all the required permissions in order for the app to function properly. You may also need to install helper apps for your device.
+2. Download and install the Macrodroid Helper app from the link in [dependencies](#dependencies). Give it the appropiate permissions.
+Open the MD Helper app and make sure you enable at least 'Files' and 'Photos and Videos' ticks. Also give macrodroid app permissions to access files.\
+    <img src="./github/images/mdh_permissions.png" height="600"></img>
     <img src="./github/images/mdh_permission.png" height="600"></img>
+3. Copy the [copy_files](./copy_files.sh) file to the android device. This file should be in the device's internal storage. In this example I created a 'Scripts' directory and copied the file to it.\
+    <img src="./github/images/copy_to_device.png" height="600"></img>
 4. Open termux and navigate to the directory where you copied the scripts.
    ![Change Directory](./github/images/change_directory.png)
 5. Use the chmod command to assign the execution permission to [run.sh](./run.sh)
